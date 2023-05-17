@@ -11,3 +11,7 @@ spring:
   h2:
     console:
       enabled: true
+
+jwt:
+  issuer: jcw001031@gmail.com
+  secret_key: simple-blog
