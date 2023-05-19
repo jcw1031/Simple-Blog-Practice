@@ -33,13 +33,10 @@ class BlogApiControllerTest {
 
     @Autowired
     protected MockMvc mockMvc;
-
     @Autowired
     protected ObjectMapper objectMapper;
-
     @Autowired
     private WebApplicationContext context;
-
     @Autowired
     BlogRepository blogRepository;
 
