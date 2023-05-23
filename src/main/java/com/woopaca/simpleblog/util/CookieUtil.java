@@ -7,7 +7,7 @@ import org.springframework.util.SerializationUtils;
 
 import java.util.Base64;
 
-public class cookieUtil {
+public class CookieUtil {
 
     /**
      * 요청값을 바탕으로 쿠키 추가

@@ -1,6 +1,7 @@
 package com.woopaca.simpleblog.config;
 
 import com.woopaca.simpleblog.config.jwt.TokenProvider;
+import com.woopaca.simpleblog.config.oauth.OAuth2AuthorizationRequestBasedOnCookieRepository;
 import com.woopaca.simpleblog.config.oauth.OAuth2UserCustomService;
 import com.woopaca.simpleblog.repository.RefreshTokenRepository;
 import com.woopaca.simpleblog.service.UserService;
