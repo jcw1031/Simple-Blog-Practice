@@ -1,3 +1,4 @@
+/*
 package com.woopaca.simpleblog.config;
 
 import com.woopaca.simpleblog.service.UserDetailService;
@@ -64,3 +65,4 @@ public class WebSecurityConfig {
         return new BCryptPasswordEncoder();
     }
 }
+*/
