@@ -2,6 +2,7 @@ package com.woopaca.simpleblog.config;
 
 import com.woopaca.simpleblog.config.jwt.TokenProvider;
 import com.woopaca.simpleblog.config.oauth.OAuth2AuthorizationRequestBasedOnCookieRepository;
+import com.woopaca.simpleblog.config.oauth.OAuth2SuccessHandler;
 import com.woopaca.simpleblog.config.oauth.OAuth2UserCustomService;
 import com.woopaca.simpleblog.repository.RefreshTokenRepository;
 import com.woopaca.simpleblog.service.UserService;
@@ -80,7 +81,7 @@ public class WebOAuthSecurityConfig {
 
     @Bean
     public OAuth2SuccessHandler oAuth2SuccessHandler() {
-        return new OAuth2SuccesHandler(tokenProvider, refreshTokenRepository,
+        return new OAuth2SuccessHandler(tokenProvider, refreshTokenRepository,
                 oAuth2AuthorizationRequestBasedOnCookieRepository(), userService);
     }
 
