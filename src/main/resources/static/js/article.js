@@ -112,7 +112,7 @@ function httpRequest(method, url, body, success, fail) {
         body: body
     }).then(response => {
         if (response.status === 200 || response.status === 201) {
-            return success;
+            return success();
         }
 
         const refresh_token = getCookie('refresh_token');
@@ -133,7 +133,7 @@ function httpRequest(method, url, body, success, fail) {
             }).then(result => {
                 localStorage.setItem('access_token', result.accessToken);
                 httpRequest(method, url, body, success, fail);
-            }).catch(error => fail);
+            }).catch(error => fail());
         } else {
             return fail;
         }
