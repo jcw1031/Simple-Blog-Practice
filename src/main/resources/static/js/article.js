@@ -133,9 +133,9 @@ function httpRequest(method, url, body, success, fail) {
             }).then(result => {
                 localStorage.setItem('access_token', result.accessToken);
                 httpRequest(method, url, body, success, fail);
-            }).catch(error => fail());
+            }).catch(() => fail());
         } else {
-            return fail;
+            return fail();
         }
     });
 }
